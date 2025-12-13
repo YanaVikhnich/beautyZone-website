@@ -22,23 +22,23 @@
         
             <ul class="header__list">
                 <li>
-            <a href="#">
-          <svg width="30" height="30">
-            <use href="/beatyZone-website/images/icons.svg#icon-phone"></use>
+            <a class="header__contact-link" href="#">
+          <svg width="32" height="32">
+            <use href="/beautyZone-website/images/icons.svg#icon-phone"></use>
           </svg>
         </a>
     </li>
     <li>
-             <a href="#">
-          <svg width="30" height="30">
-            <use href="/beatyZone-website/images/icons.svg#icon-facebook-icon"></use>
+             <a class="header__contact-link" href="#">
+          <svg width="32" height="32">
+            <use href="/beautyZone-website/images/icons.svg#icon-facebook-icon"></use>
           </svg>
         </a>
     </li>
     <li>
-             <a href="#">
-          <svg width="30" height="30">
-            <use href="/beatyZone-website/images/icons.svg#icon-instagram-icon"></use>
+             <a class="header__contact-link" href="#">
+          <svg width="32" height="32">
+            <use href="/beautyZone-website/images/icons.svg#icon-instagram-icon"></use>
           </svg>
         </a>
         </li>
@@ -82,10 +82,13 @@
             </p>
           </div>
           <div class="container__proposition-section-image">
-            <img class="proposition-section__image before-proposition-image" src="/beatyZone-website/images/before-procedure.jpg" alt="patient who picture their skin before procedure">
+            <img class="proposition-section__image before-proposition-image" src="/beautyZone-website/images/before-procedure.jpg" alt="patient who picture their skin before procedure">
           
-          <img class="proposition-section__image after-proposition-image" src="/beatyZone-website/images/after-procudure.jpg" alt="patient who picture their procedure after skincare">
+          <img class="proposition-section__image after-proposition-image" src="/beautyZone-website/images/after-procudure.jpg" alt="patient who picture their procedure after skincare">
         </div>
+        <img class="star big-star" src="/beautyZone-website/images/big-star.jpg">
+        <img class="star small-star" src="/beautyZone-website/images/little-star.jpg">
+        <img class="star middle-star" src="/beautyZone-website/images/middle-star.jpg">
     </div>
         </div>
       </section>
@@ -97,7 +100,7 @@
           <li class="advantages-section__item">
             
             <svg class="advantage-section__item-icon" width="40" height="43">
-                <use href="/beatyZone-website/images/icons.svg#icon-atom"></use>
+                <use href="/beautyZone-website/images/icons.svg#icon-atom"></use>
             </svg>
           <p class="advantage-section__text">  Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
             років</p>
@@ -106,7 +109,7 @@
           <li class="advantages-section__item">
             
             <svg class="advantage-section__item-icon" width="48" height="48">
-                <use href="/beatyZone-website/images/icons.svg#icon-skincare"></use>
+                <use href="/beautyZone-website/images/icons.svg#icon-skincare"></use>
             </svg>
            <p class="advantage-section__text"> Використовуємо тільки професійне обладнання та косметику, перевірену
             часом</p>
@@ -115,7 +118,7 @@
           <li class="advantages-section__item">
             
             <svg class="advantage-section__item-icon" width="48" height="48">
-                <use href="/beatyZone-website/images/icons.svg#icon-crown">
+                <use href="/beautyZone-website/images/icons.svg#icon-crown">
 
                 </use>
             </svg>
@@ -129,8 +132,30 @@
         <h2 class="procedure-section__title title">
           Наші <span class="blue-text">процедури</span>
         </h2>
-        <!-- slider -->
-      </section>
+        <ul class="procedure-section__list">
+          <li class="procedure-section__item">
+          <article class="procedure-card">
+        <img class="procedure-card__image" src="/beautyZone-website/images/massage-procedure.jpg" alt="massage procedure"/>
+       <p class="procedure-card__text">Маски <br>
+для обличчя</p>
+        </article>
+      </li>
+      <li class="procedure-section__item">
+         <article class="procedure-card">
+        <img class="procedure-card__image" src="/beautyZone-website/images/injection-procedure.jpg" alt="injection procedure">
+      <p class="procedure-card__text">Ін'єкції <br>
+для обличчя</p>  
+      </article>
+    </li>
+    <li class="procedure-section__item">
+         <article class="procedure-card">
+        <img class="procedure-card__image" src="/beautyZone-website/images/peeling-procedure.jpg" alt="peeling procedure">
+   <p class="procedure-card__text">Очищення <br>
+обличчя</p>
+      </article>
+    </li>
+  </ul> 
+    </section>
       <section class="contact-section section" id="contact">
         <div class="container">
             <h2 class="contact-section__title title">
@@ -180,13 +205,15 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="link">beauty zone</a>
+      
+      <div class="footer__container">
       <nav class="footer__nav">
+        <a href="./" class="brand-text brand-text-link">beauty zone</a>
         <ul class="footer__nav-list">
-          <li><a class="link">Про нас</a></li>
-          <li><a class="link">Чому ми</a></li>
-          <li><a class="link">Наші процедури</a></li>
-          <li><a class="link">Контакти</a></li>
+          <li><a class="footer__link " href="#about-us">Про нас</a></li>
+          <li><a class="footer__link" href="#advantage">Чому ми</a></li>
+          <li><a class="footer__link" href="#services">Наші процедури</a></li>
+          <li><a class="footer__link" href="#contact">Контакти</a></li>
         </ul>
       </nav>
       <address class="footer__address">
@@ -206,18 +233,35 @@
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
+          <li>
+             <div>
+           <a class="footer__contact-link" href="#">
+          <svg width="42" height="42">
+            <use href="/beautyZone-website/images/icons.svg#icon-phone"></use>
+          </svg>
+        </a>
+          <a class="footer__contact-link" href="#">
+          <svg width="42" height="42">
+            <use href="/beautyZone-website/images/icons.svg#icon-facebook-icon"></use>
+          </svg>
+        </a>
+           <a class="footer__contact-link" href="#">
+          <svg width="42" height="42">
+            <use href="/beautyZone-website/images/icons.svg#icon-instagram-icon"></use>
+          </svg>
+        </a>
+        </div></li>
         </ul>
 
-        <div>
-          <a><!--phone--></a>
-          <a><!--facebook--></a>
-          <a><!--instagram--></a>
-        </div>
+       
         <div class="footer__address-info">
           <a class="footer__address-link" href="#">Політика конфіденційності</a>
-          <p>&copy; 2022 Дані захищені</p>
+          <p class="protected-text">&copy; 2022 Дані захищені</p>
         </div>
       </address>
+      
+      </div>
+      <img class="footer__decoration-image" src="/beautyZone-website/images/medicine.png" alt="decoration image"/>
     </footer>
   </body>
 </html>

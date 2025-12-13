@@ -10,6 +10,7 @@
   --color-secondary-light: #747272;
   --color-secondary-brand-dark: #011f4a;
   --color-secondary-brand-light: #ffd02b;
+  --color-thirdy-shadow: #A8C6F561;
 }
 * {
   margin: 0;
@@ -31,6 +32,7 @@ ul {
 .link {
   text-decoration: none;
   color: var(--color-brand-dark);
+  transition: all 0.3s ease;
 }
 .link:hover {
   color: var(--color-brand-light);
@@ -43,6 +45,8 @@ ul {
 }
 .brand-text-link {
   text-decoration: none;
+  font-size: 24px;
+  width: 84px;
 }
 .terms-link {
   color: var(--color-secondary-light);
@@ -56,9 +60,15 @@ ul {
   border-radius: 32px;
   padding: 16px 32px;
   outline: none;
-  border: none;
+  border: 2px solid var(--color-brand-light);
+  font-size: 18px;
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
 }
 /* container */
 .container {
@@ -113,11 +123,18 @@ ul {
   gap: 56px;
   padding: 10.5px 0;
 }
+.header__contact-link {
+  fill: var(--color-brand-dark);
+  transition: fill 0.3s ease;
+}
+.header__contact-link:hover {
+  fill: var(--color-primary-light);
+}
 /* hero-section */
 .hero-section {
   padding-top: 17px;
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1)  30%,  rgba(255, 255, 255, 0.6) 41% , rgba(255, 255, 255, 0) 52%),
-    url(/beatyZone-website/images/doctor-with-patient.jpg);
+    url(/beautyZone-website/images/doctor-with-patient.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -143,12 +160,15 @@ ul {
   margin-top: 40px;
 }
 .hero-section__button {
+  
   width: 219px;
   height: 53px;
 }
 
 /* Proposition-section */
+
 .container__proposition-section {
+  position: relative;
     display: flex;
     justify-content: space-evenly;
 flex-wrap: wrap;
@@ -173,6 +193,28 @@ width:335px;
 height: 328px;
 
 
+}
+.star {
+  position: absolute;
+  object-fit: cover;
+}
+.big-star {
+  top: 356px;
+  right: 500px;
+    width: 64px;
+  height: 64px;
+}
+.small-star {
+  width: 16px;
+  height: 16px;
+  right: 105px;
+  top: 251px;
+}
+.middle-star {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right:73px;
 }
 .container__proposition-section-image {
     display: flex;
@@ -208,6 +250,7 @@ height: 328px;
   border-radius: 32px;
   background-color: var(--color-primary-light);
   padding: 24px 32px;
+  box-shadow: 0 4px 4px 0 var(--color-thirdy-shadow);
 }
 .advantage-section__text {
     font-size: 18px;
@@ -217,6 +260,50 @@ height: 328px;
 
 .procedure-section__title {
   width: 510px;
+}
+.procedure-section__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap:16px;
+  width: 100%;
+  width: 1216px;
+  padding-top: 48px;
+  margin: 0 auto;
+    
+}
+
+/* procedure-card */
+.procedure-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 344px;
+  height: 456px;
+  border-radius: 4px 120px ;
+  background-image: linear-gradient(180deg, #011C4400 0%, #011C44B9 72.58%, #011C44FF 100%);
+
+}
+.procedure-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+border-radius: 4px 120px ;
+width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.procedure-card__text {
+  color: var(--color-primary-light);
+  padding: 0;
+  padding-bottom: 32px;
+  width: 152px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -285,6 +372,7 @@ height: 328px;
   border-radius: 32px;
   color: var(--color-primary-light);
   background-color: transparent;
+  transition: all 0.3s ease;
 }
 .input__control:focus {
   background-color: var(--color-secondary-light);
@@ -296,4 +384,53 @@ height: 328px;
 }
 .input__label {
   display: none;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+padding-bottom: 56px;
+padding-top: 56px;
+background-color: var(--color-brand-dark);
+}
+.footer__container {
+display: flex;
+justify-content: space-evenly;
+gap: 186px;
+}
+.footer__nav, .footer__address {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 186px;
+}
+.footer__nav-list, .footer__address-list, .footer__address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__link, .footer__address-link {
+  text-decoration: none;
+color: var(--color-primary-light);
+font-size: 16px;
+font-family: Roboto;
+transition: all 0.3s ease;
+}
+.footer__link:hover, .footer__address-link:hover {
+color: var(--color-brand-light);
+
+}
+.footer__contact-link {
+  fill: var(--color-primary-light);
+  text-decoration: none;
+  margin-right: 24px;
+}
+.protected-text {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+}
+.footer__decoration-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
