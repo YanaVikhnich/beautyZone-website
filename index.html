@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -65,8 +65,8 @@
       </section>
       <section class="proposition-section section" id="about-us">
         <div class="container">
-            <div class="container__proposition-section">
-          <div class="container__proposition-section-metamorphose">
+            <div class="proposition-section__container">
+          <div class="proposition-section__metamorphose">
             <h2 class="proposition-section__title title">
               Перевтілюйтесь в <span class="brand-text">beauty zone!</span>
             </h2>
@@ -81,54 +81,65 @@
               З нами краса назавжди!
             </p>
           </div>
-          <div class="container__proposition-section-image">
-            <img class="proposition-section__image before-proposition-image" src="/beautyZone-website/images/before-procedure.jpg" alt="patient who picture their skin before procedure">
+          <div class="proposition-section__container-images">
+            <img class="proposition-section__image proposition-section__image-before" src="/beautyZone-website/images/before-procedure.jpg" alt="patient who picture their skin before procedure">
           
-          <img class="proposition-section__image after-proposition-image" src="/beautyZone-website/images/after-procudure.jpg" alt="patient who picture their procedure after skincare">
+          <img class="proposition-section__image proposition-section__image-after" src="/beautyZone-website/images/after-procudure.jpg" alt="patient who picture their procedure after skincare">
         </div>
-        <img class="star big-star" src="/beautyZone-website/images/big-star.jpg">
-        <img class="star small-star" src="/beautyZone-website/images/little-star.jpg">
-        <img class="star middle-star" src="/beautyZone-website/images/middle-star.jpg">
+        <svg class="star big-star" viewBox="0 0 32 32" preserveAspectRatio="none">
+          <path fill="#011f4a" style="fill: var(--color1, #011f4a)" d="M6.693 0l10.657 10.184 14.321-3.491-10.184 10.657 3.491 14.321-10.657-10.184-14.321 3.491 10.184-10.657-3.491-14.321z"></path>
+        </svg>
+         <svg class="star small-star" viewBox="0 0 32 32" preserveAspectRatio="none" >
+          <path fill="#747272" style="fill: var(--color2, #747272)" d="M9.078 0l8.697 10.661 13.667-1.582-10.661 8.697 1.582 13.667-8.697-10.661-13.667 1.582 10.661-8.697-1.582-13.667z"></path>
+        </svg>
+         <svg class="star middle-star" viewBox="0 0 32 32" preserveAspectRatio="none" >
+<path fill="#2b7fff" style="fill: var(--color3, #2b7fff)" d="M24.979 0l-3.491 14.321 10.184 10.657-14.321-3.491-10.657 10.184 3.491-14.321-10.184-10.657 14.321 3.491 10.657-10.184z"></path>
+        </svg>
     </div>
+   
         </div>
       </section>
       <section class="advantages-section section" id="advantage">
+        <div class="container">
+
         <h2 class="advantages-section__title title">
           Чому люди <span class="blue-text">обирають нас</span>
         </h2>
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             
-            <svg class="advantage-section__item-icon" width="40" height="43">
+            <svg class="advantages-section__item-icon" width="40" height="43">
                 <use href="/beautyZone-website/images/icons.svg#icon-atom"></use>
             </svg>
-          <p class="advantage-section__text">  Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
+          <p class="advantages-section__text">  Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
             років</p>
         
           </li>
           <li class="advantages-section__item">
             
-            <svg class="advantage-section__item-icon" width="48" height="48">
+            <svg class="advantages-section__item-icon" width="48" height="48">
                 <use href="/beautyZone-website/images/icons.svg#icon-skincare"></use>
             </svg>
-           <p class="advantage-section__text"> Використовуємо тільки професійне обладнання та косметику, перевірену
+           <p class="advantages-section__text"> Використовуємо тільки професійне обладнання та косметику, перевірену
             часом</p>
         
           </li>
           <li class="advantages-section__item">
             
-            <svg class="advantage-section__item-icon" width="48" height="48">
+            <svg class="advantages-section__item-icon" width="48" height="48">
                 <use href="/beautyZone-website/images/icons.svg#icon-crown">
 
                 </use>
             </svg>
-           <p class="advantage-section__text"> Наша мета - підкреслити переваги та приховати недоліки, а не
+           <p class="advantages-section__text"> Наша мета - підкреслити переваги та приховати недоліки, а не
             переробити</p>
         
           </li>
         </ul>
+        </div>
       </section>
       <section class="procedure-section section" id="services">
+        <div class="container">
         <h2 class="procedure-section__title title">
           Наші <span class="blue-text">процедури</span>
         </h2>
@@ -154,7 +165,8 @@
 обличчя</p>
       </article>
     </li>
-  </ul> 
+  </ul>
+  </div> 
     </section>
       <section class="contact-section section" id="contact">
         <div class="container">
@@ -205,7 +217,7 @@
       </section>
     </main>
     <footer class="footer">
-      
+      <div class="container">
       <div class="footer__container">
       <nav class="footer__nav">
         <a href="./" class="brand-text brand-text-link">beauty zone</a>
@@ -262,6 +274,7 @@
       
       </div>
       <img class="footer__decoration-image" src="/beautyZone-website/images/medicine.png" alt="decoration image"/>
+      </div>
     </footer>
   </body>
 </html>

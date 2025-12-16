@@ -1,0 +1,45 @@
+.proposition-section {
+  
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+  }
+  &__metamorphose {
+    width: 709px;
+  }
+
+  &__title {
+    width: 529px;
+    margin: 0 auto;
+  }
+
+  &__metamorphose .text {
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  &__container-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 500px;
+  }
+  &__image {
+    display: inline-block;
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 335px;
+    height: 328px;
+  }
+  &__image-before {
+    align-self: flex-start;
+  }
+  &__image-after {
+    align-self: flex-end;
+  }
+}

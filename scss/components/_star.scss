@@ -1,0 +1,47 @@
+.star {
+  position: absolute;
+  object-fit: cover;
+  animation: turn 10s linear infinite; 
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  20% {
+    transform: rotate(120deg) scale(1.2);
+  }
+  40% {
+    transform: rotate(140deg) scale(1.4);
+  }
+  60% {
+    transform: rotate(160deg) scale(1.6);
+  }
+  75% {
+    transform: rotate(180deg) scale(1.4);
+  }
+  90% {
+    transform: rotate(200deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+.big-star {
+  top: 50%;
+  right: 28%;
+    width: 64px;
+  height: 64px;
+}
+.small-star {
+  right: 12%;
+  top: 27%;
+    width: 16px;
+  height: 16px;
+}
+.middle-star {
+  top: 0%;
+  right:7%;
+  width: 40px;
+  height: 40px;
+}

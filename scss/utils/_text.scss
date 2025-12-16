@@ -1,0 +1,27 @@
+.text {
+  font-size: 1.375rem;
+  color: var(--color-brand-dark);
+}
+.small-text {
+  font-size: 0.75rem;
+  width: 238px;
+  height: 36px;
+  margin-top: 14px;
+  text-align: center;
+}
+.blue-text {
+  color: var(--color-brand-light);
+}
+.bold {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.brand-text {
+  font-family: Play;
+  color: var(--color-brand-light);
+  text-transform: capitalize;
+}
+.protected-text {
+  color: var(--color-secondary-light);
+  font-size: 0.8125rem;
+}

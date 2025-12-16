@@ -1,0 +1,32 @@
+.contact-section {
+  &__title {
+    width: 432px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+    margin-top: 48px;
+  }
+  &__map {
+    border-radius: 32px;
+  }
+  &__form {
+    border-radius: 32px;
+    width: 100%;
+    max-width: 422px;
+    padding: 16px 8px;
+    background: var(--color-brand-dark);
+  }
+  &__form-input {
+    width: 310px;
+    margin: 0 auto 16px;
+  }
+  &__form-button {
+    width: 281px;
+    margin: 0 auto;
+    height: 53px;
+    font-size: 1.125rem;
+  }
+}

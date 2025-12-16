@@ -1,0 +1,14 @@
+.procedure-section {
+  &__title {
+    width: 510px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    width: 100%;
+    width: 1216px;
+    padding-top: 48px;
+    margin: 0 auto;
+  }
+}

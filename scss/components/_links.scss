@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  color: var(--color-brand-dark);
+  transition: all 0.3s ease;
+ 
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+  
+}
+.brand-text-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 84px;
+}
+.terms-link {
+  color: var(--color-secondary-light);
+  text-underline-offset: 0.125rem;
+}

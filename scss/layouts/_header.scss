@@ -1,0 +1,31 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 240px;
+    padding: 32px 0;
+    backdrop-filter: blur(10px);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    padding: 10.5px 0;
+  }
+  &__contact-link {
+    fill: var(--color-brand-dark);
+    transition: fill 0.3s ease;
+
+    &:hover {
+      fill: var(--color-primary-light);
+    }
+  }
+}

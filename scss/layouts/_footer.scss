@@ -1,0 +1,48 @@
+.footer {
+  position: relative;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  background-color: var(--color-brand-dark);
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 186px;
+  }
+  &__nav,
+  &__address {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 186px;
+  }
+  &__nav-list,
+  &__address-list,
+  &__address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__link,
+  &__address-link {
+    text-decoration: none;
+    color: var(--color-primary-light);
+    font-size: 1rem;
+    font-family: Roboto;
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+  &__contact-link {
+    fill: var(--color-primary-light);
+    text-decoration: none;
+    margin-right: 24px;
+  }
+  &__decoration-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+

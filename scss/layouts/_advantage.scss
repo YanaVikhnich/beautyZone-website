@@ -1,0 +1,28 @@
+.advantages-section {
+ background-image: linear-gradient(0deg, #2B7FFF00 0% , #2B7FFF00 0% , #2B7FFF 100%);
+
+  &__title {
+    width: 432px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 48px;
+  }
+  &__item {
+    width: 316px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-primary-dark);
+    border-radius: 32px;
+    background-color: var(--color-primary-light);
+    padding: 24px 32px;
+    box-shadow: 0 4px 4px 0 var(--color-thirdy-shadow);
+  }
+    
+  &__text {
+    font-size: 1.125rem;
+    padding: 8px;
+  }
+}
