@@ -1,5 +1,5 @@
 .advantages-section {
- background-image: linear-gradient(0deg, #2B7FFF00 0% , #2B7FFF00 0% , #2B7FFF 100%);
+position: relative;
 
   &__title {
     width: 432px;
@@ -25,4 +25,15 @@
     font-size: 1.125rem;
     padding: 8px;
   }
+  &__background-wave  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1849px;
+  max-height: 1785px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
+}
+

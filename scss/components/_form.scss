@@ -1,14 +1,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 100%;
+  max-width: 310px;
+  margin: 0 auto;
+  gap: 32px;
 }
 .form__title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   width: 274px;
   font-size: 1.375rem;
-  margin: 0 auto 32px;
   text-align: center;
   color: var(--color-primary-light);
 }
@@ -21,6 +23,16 @@
   max-width: 213px;
   text-align: center;
   color: var(--color-secondary-light);
+}
+ .form__input {
+    width: 310px;
+    margin: 0 auto 16px;
+  }
+.form__button {
+  width: 281px;
+  margin: 0 auto;
+  height: 53px;
+  font-size: 1.125rem;
 }
 .input__control {
   width: 310px;

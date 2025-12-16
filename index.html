@@ -53,7 +53,7 @@
         <p class="hero-section__uppertitle">Косметологічна клініка</p>
         <h1 class="hero-section__title brand-text">beauty zone</h1>
         <div class="hero-section__container-button">
-          <button class="button hero-section__button" type="submit">
+          <button class="button hero-section__button modal-btn-open" type="submit">
             Замовити дзвінок
           </button>
           <p class="small-text">
@@ -99,7 +99,12 @@
    
         </div>
       </section>
+      
+       
       <section class="advantages-section section" id="advantage">
+       <svg class="advantages-section__background-wave">
+          <use href="./images/advantage-baackgroun-wave.svg"></use>
+        </svg>
         <div class="container">
 
         <h2 class="advantages-section__title title">
@@ -186,32 +191,35 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <!-- contact info -->
-         <div class="contact-section__form">
-        <form name="contact-info">
-          <h3 class="form__title title">
+         <div class="contact-section__form-container">
+          <div class="form contact-section__form">
+             <h3 class="contact-section__form-title form__title title">
             Запишіться <span class="blue-text">безкоштовно</span> та отримайте
             подарунок
           </h3>
-          <div class="contact-section__form-input">
+        <form name="contact-info">
+         
+          <div class="form__input contact-section__form-input">
           <label class="input__label" for="name">Ваше ім'я та прізвище</label>
             
             <input class="input__control" id="user-name" type="text" name="user-name" placeholder="Ваше ім'я та прізвище" required/>
           </div>
-          <div class="contact-section__form-input">
+          <div class="form__input contact-section__form-input">
           <label class="input__label" for="user-number">Ваш номер телефону</label>
             <input class="input__control" id="user-phone" type="text" name="user-phone" placeholder="Ваш номер телефону" required />
           </div>
-          <div class="contact-section__form-input">
+          <div class="form__input contact-section__form-input">
           <label class="input__label" for="user-email">Ваша електронна пошта</label>
             
             <input class="input__control" id="user-email" type="email" name="user-email" placeholder="Ваша електронна пошта" required />
        </div>
        
-          <button class="contact-section__form-button button" type="submit">
+          <button class="form__button button" type="submit">
             Записатись безкоштовно
           </button>
         <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link" href="#">політикою конфіденційності</a></p>
         </form>
+        </div>
         </div>
         </div>
       </section>
@@ -276,5 +284,42 @@
       <img class="footer__decoration-image" src="/beautyZone-website/images/medicine.png" alt="decoration image"/>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+          <button class="modal-btn-close modal__btn-close" type="button">
+            <svg viewBox="0 0 20 20" preserveAspectRatio="none" width="16" height="16">
+              <use href="./images/close-button.svg"></use>
+            </svg>
+          </button>
+
+<div class="modal__container">
+   
+  <h1 class="modal__header-title">Замовити дзвінок</h1>
+ <div class="form modal__form">
+  <h3 class=" modal__form-title form__title title">Запишіться <span class="blue-text">безкоштовно</span>
+та отримайте подарунок</h3>
+
+<form name="modal-form">
+  <div class="form__input modal__form-input">
+<label class="input__label" for="modal-name">Ваше ім'я та прізвище</label>
+<input class="input__control" id="modal-name" name="modal-name" type="text" placeholder="Ваше ім'я та прізвище" required>
+</div>
+<div class="form__input modal__form-input">
+<label class="input__label" for="modal-number">Ваш номер телефону</label>
+<input class="input__control" id="modal-number" type="text" name="modal-number"  placeholder="Ваш номер телефону" required>
+</div>
+<div class="form__input modal__form-input">
+<label class="input__label" for="modal-email">Ваша електронна пошта</label>
+<input class="input__control" id="modal-email" type="email" name="modal-email" placeholder="Ваша електронна пошта" required>
+</div>
+<button class="button form__button" type="submit">Записатись безкоштовно</button>
+<p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link">політикою конфіденційності</a></p>
+</form>
+</div>
+</div>
+      </div>
+
+    </div>
   </body>
+  <script src="/beautyZone-website/js/modal.js"></script>
 </html>
