@@ -3,11 +3,18 @@
   color: var(--color-brand-dark);
 }
 .small-text {
-  font-size: 0.75rem;
-  width: 238px;
-  height: 36px;
-  margin-top: 14px;
+  font-size: 0.6875rem;
+ width: 186px;
+ height: 36px;
+  margin: 8px 0 auto;
   text-align: center;
+
+  @media screen and (min-width: $bp-desktop) {
+font-size: 0.75rem;
+ width: 238px;
+ margin-top: 14px;
+  
+  }
 }
 .blue-text {
   color: var(--color-brand-light);
@@ -23,5 +30,9 @@
 }
 .protected-text {
   color: var(--color-secondary-light);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 0.8125rem;
+  }
 }

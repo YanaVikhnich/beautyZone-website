@@ -1,14 +1,47 @@
 .procedure-section {
   &__title {
-    width: 510px;
+    width: 247px;
+    font-size: 2rem;
   }
+  &__slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
   &__list {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 16px;
     width: 100%;
     width: 1216px;
-    padding-top: 48px;
+    padding-top: 24px;
     margin: 0 auto;
   }
-}
+  &__list li {
+    margin: 0;
+  } 
+  @media screen and (min-width: $bp-tablet) {
+      &__slider {
+        min-width: 969px;
+      }
+    }
+  @media screen and (min-width: $bp-desktop) {
+    &__title {
+      width: 510px;
+      font-size: 4rem;
+    }
+    &__list {
+      padding-top: 48px;
+    }
+    &__slider {
+      min-width: 1216px;
+    }
+   
+    }
+  }
+

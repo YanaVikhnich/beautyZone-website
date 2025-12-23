@@ -1,48 +1,108 @@
 .footer {
   position: relative;
-  padding-bottom: 8px;
-  padding-top: 8px;
   background-color: var(--color-brand-dark);
+  margin-top: 0;
 
   &__container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    gap: 186px;
+    align-items: center;
+    gap: 16px;
+    padding-top: 32px;
+    padding-bottom: 66px;
   }
-  &__nav,
+  &__brand-text {
+    width: 57px;
+    font-size:1rem;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60.5px;
+  }
   &__address {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    gap: 186px;
+    gap: 16px;
   }
   &__nav-list,
-  &__address-list,
   &__address-info {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
   }
-  &__link,
-  &__address-link {
+  &__address-list {
+    display: none;
+  }
+  &__link {
     text-decoration: none;
     color: var(--color-primary-light);
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-family: Roboto;
+    font-style: normal;
     transition: all 0.3s ease;
+    text-align: center;
     &:hover {
       color: var(--color-brand-light);
     }
   }
+
+  &__decoration-image {
+    display: none;
+  }
+  &__address-container-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 16px;
+  }
+  &__contact-list {
+    display: flex;
+    gap: 20px;
+  }
   &__contact-link {
     fill: var(--color-primary-light);
     text-decoration: none;
-    margin-right: 24px;
   }
-  &__decoration-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    & {
+      margin-top: 48px;
+    }
+    &__container {
+      flex-direction: row;
+      padding: 56px 0;
+      gap: 186px;
+    }
+    &__brand-text {
+    width: 83px;
+    font-size:1.5rem;
+  }
+    &__nav,
+    &__address {
+      flex-direction: row;
+      gap: 186px;
+    }
+    &__link {
+      font-size: 1rem;
+    }
+    &__decoration-image {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__address-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 16px;
+    }
   }
 }
-
-

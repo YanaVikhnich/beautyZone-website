@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
-        <a class="brand-text brand-text-link" href="./"
-          >beauty <br />
+        <a class="brand-text header__title brand-text-link" href="./"
+          >beauty 
           zone</a
         >
         <ul class="header__list">
@@ -22,36 +26,87 @@
         
             <ul class="header__list">
                 <li>
-            <a class="header__contact-link" href="#">
+            <a class="contact-link" href="#">
           <svg width="32" height="32">
             <use href="/beautyZone-website/images/icons.svg#icon-phone"></use>
           </svg>
         </a>
     </li>
     <li>
-             <a class="header__contact-link" href="#">
+             <a class="contact-link" href="#">
           <svg width="32" height="32">
             <use href="/beautyZone-website/images/icons.svg#icon-facebook-icon"></use>
           </svg>
         </a>
     </li>
     <li>
-             <a class="header__contact-link" href="#">
+             <a class="contact-link" href="#">
           <svg width="32" height="32">
             <use href="/beautyZone-website/images/icons.svg#icon-instagram-icon"></use>
           </svg>
         </a>
         </li>
     </ul>
+    <button type="button" class="header__burger menu-btn-open">
+      <svg width="24" height="24">
+        <use  href="/beautyZone-website/images/Beauty Zone/bakery landing/burger-menu.svg">
+    </use>
+  </svg>
+</button>
+  <div class="burger-menu visually-hidden">
+    <div class="burger-menu__container">
+    <nav class="burger-menu__nav">
+      <a href="./" class="brand-text brand-text-link">beauty zone</a>
+      <div class="burger-menu__list">
+      <ul class="burger-menu__section-list">
+        <li><a href="#about-us" class="link about-btn-close">Про нас</a></li>
+        <li><a href="#advantage" class="link advantage-btn-close">Чому ми</a></li>
+        <li><a href="#services" class="link services-btn-close">Наші процедури</a></li>
+        <li><a href="#contact" class="link contact-btn-close">Контакти</a></li>
+      </ul>
+      <ul class="burger-menu__contact-list">
+        <li><a class="contact-link" href="#">
+          <svg width="32" height="32">
+            <use href="./images/phone.svg">
+
+            </use>
+          </svg>
+        </a></li>
+         <li><a class="contact-link" href="#"> 
+          <svg width="32" height="32">
+            <use href="./images/facebook-icon.svg">
+
+            </use>
+          </svg>
+        </a></li>
+          <li><a class="contact-link" href="#">
+             <svg width="32" height="32">
+            <use href="./images/instagram-icon.svg">
+
+            </use>
+          </svg>
+          </a></li>
+      </ul>
+    </div>
+    </nav>
+    <button type="button" class="burger-menu__btn menu-btn-close">
+       <svg viewBox="0 0 20 20" preserveAspectRatio="none" width="12" height="12">
+              <use href="./images/close-button.svg"></use>
+            </svg>
+    </button>
+    </div>
+  </div>
+
         
       </nav>
     </header>
     <main>
       <section class="hero-section section">
-        <div class="container">
-            <div class="hero-section__container">
-        <p class="hero-section__uppertitle">Косметологічна клініка</p>
-        <h1 class="hero-section__title brand-text">beauty zone</h1>
+        <div class="container hero-section__container">
+          <div class="title-container">
+        <p class="title-container__uppertitle">Косметологічна клініка</p>
+        <h1 class="title-container__maintitle brand-text">beauty zone</h1>
+      </div>
         <div class="hero-section__container-button">
           <button class="button hero-section__button modal-btn-open" type="submit">
             Замовити дзвінок
@@ -60,12 +115,10 @@
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
         </div>
-        </div>
     </div>
       </section>
       <section class="proposition-section section" id="about-us">
-        <div class="container">
-            <div class="proposition-section__container">
+        <div class="container proposition-section__container">
           <div class="proposition-section__metamorphose">
             <h2 class="proposition-section__title title">
               Перевтілюйтесь в <span class="brand-text">beauty zone!</span>
@@ -96,16 +149,14 @@
 <path fill="#2b7fff" style="fill: var(--color3, #2b7fff)" d="M24.979 0l-3.491 14.321 10.184 10.657-14.321-3.491-10.657 10.184 3.491-14.321-10.184-10.657 14.321 3.491 10.657-10.184z"></path>
         </svg>
     </div>
-   
-        </div>
       </section>
-      
        
+      
       <section class="advantages-section section" id="advantage">
-       <svg class="advantages-section__background-wave">
+      <svg viewBox="0 0 1390 350" class="advantages-section__background-wave">
           <use href="./images/advantage-baackgroun-wave.svg"></use>
         </svg>
-        <div class="container">
+        <div class="container advantages-section__container">
 
         <h2 class="advantages-section__title title">
           Чому люди <span class="blue-text">обирають нас</span>
@@ -148,22 +199,30 @@
         <h2 class="procedure-section__title title">
           Наші <span class="blue-text">процедури</span>
         </h2>
-        <ul class="procedure-section__list">
-          <li class="procedure-section__item">
+        <div class="procedure-section__slider">
+        <button class="carousel-button prev">
+          <svg width="20" height="20">
+            <use href="./images/arrow.svg"></use>
+          </svg>
+        </button>
+        <div class="swiper">
+          
+        <ul class="procedure-section__list swiper-wrapper">
+          <li class="swiper-slide">
           <article class="procedure-card">
         <img class="procedure-card__image" src="/beautyZone-website/images/massage-procedure.jpg" alt="massage procedure"/>
        <p class="procedure-card__text">Маски <br>
 для обличчя</p>
         </article>
       </li>
-      <li class="procedure-section__item">
+      <li class="swiper-slide">
          <article class="procedure-card">
         <img class="procedure-card__image" src="/beautyZone-website/images/injection-procedure.jpg" alt="injection procedure">
       <p class="procedure-card__text">Ін'єкції <br>
 для обличчя</p>  
       </article>
     </li>
-    <li class="procedure-section__item">
+    <li class="swiper-slide">
          <article class="procedure-card">
         <img class="procedure-card__image" src="/beautyZone-website/images/peeling-procedure.jpg" alt="peeling procedure">
    <p class="procedure-card__text">Очищення <br>
@@ -171,20 +230,34 @@
       </article>
     </li>
   </ul>
+    
+  <div class="pagination">
+    <span class="pagination__bullet"></span>
+    <span class="pagination__bullet"></span>
+    <span class="pagination__bullet"></span>
+  </div>
+  </div>
+  <button class="carousel-button next">
+     <svg width="20" height="20">
+            <use href="./images/arrow.svg"></use>
+          </svg>
+  </button>
+  </div>
   </div> 
     </section>
+
+    
       <section class="contact-section section" id="contact">
-        <div class="container">
+        <div class="container contact-section__container ">
             <h2 class="contact-section__title title">
           Як нас <span class="blue-text">знайти</span>
         </h2>
-            <div class="contact-section__container">
+            <div class="contact-section__article-container">
         
         <iframe
         class="contact-section__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1765455551886!5m2!1sru!2sua"
-          width="600"
-          height="450"
+        
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -225,10 +298,10 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      
       <div class="footer__container">
       <nav class="footer__nav">
-        <a href="./" class="brand-text brand-text-link">beauty zone</a>
+        <a href="./" class="brand-text brand-text-link footer__brand-text">beauty zone</a>
         <ul class="footer__nav-list">
           <li><a class="footer__link " href="#about-us">Про нас</a></li>
           <li><a class="footer__link" href="#advantage">Чому ми</a></li>
@@ -237,52 +310,61 @@
         </ul>
       </nav>
       <address class="footer__address">
+        <div class="footer__address-container-list">
         <ul class="footer__address-list">
           <li>
-            <a class="footer__address-link" href="tel:+380960000007"
+            <a class="footer__link" href="tel:+380960000007"
               >+ 38 (096) 000 00 07</a
             >
           </li>
           <li>
-            <a class="footer__address-link" href="mailto:beautyzone@gmail.com"
+            <a class="footer__link" href="mailto:beautyzone@gmail.com"
               >beautyzone@gmail.com</a
             >
           </li>
           <li>
-            <a class="footer__address-link" href=""
+            <a class="footer__link" href=""
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
-          <li>
-             <div>
+      </ul>
+             <ul class="footer__contact-list">
+              <li>
            <a class="footer__contact-link" href="#">
           <svg width="42" height="42">
             <use href="/beautyZone-website/images/icons.svg#icon-phone"></use>
           </svg>
         </a>
+        </li>
+        <li>
+        
           <a class="footer__contact-link" href="#">
           <svg width="42" height="42">
             <use href="/beautyZone-website/images/icons.svg#icon-facebook-icon"></use>
           </svg>
         </a>
+      </li>
+        <li>
            <a class="footer__contact-link" href="#">
           <svg width="42" height="42">
             <use href="/beautyZone-website/images/icons.svg#icon-instagram-icon"></use>
           </svg>
         </a>
-        </div></li>
-        </ul>
+      </li>
+      </ul>
+      </div>
+        
 
        
         <div class="footer__address-info">
-          <a class="footer__address-link" href="#">Політика конфіденційності</a>
+          <a class="footer__link" href="#">Політика конфіденційності</a>
           <p class="protected-text">&copy; 2022 Дані захищені</p>
         </div>
       </address>
       
       </div>
       <img class="footer__decoration-image" src="/beautyZone-website/images/medicine.png" alt="decoration image"/>
-      </div>
+      
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -321,5 +403,12 @@
 
     </div>
   </body>
-  <script src="/beautyZone-website/js/modal.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./js/procedures-slider.js"></script>
+  
+
+  
 </html>

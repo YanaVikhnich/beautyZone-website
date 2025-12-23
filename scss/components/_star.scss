@@ -1,7 +1,7 @@
 .star {
   position: absolute;
   object-fit: cover;
-  animation: turn 10s linear infinite; 
+  animation: turn 10s linear infinite;
 }
 
 @keyframes turn {
@@ -28,20 +28,37 @@
   }
 }
 .big-star {
-  top: 50%;
-  right: 28%;
-    width: 64px;
-  height: 64px;
-}
-.small-star {
-  right: 12%;
-  top: 27%;
-    width: 16px;
-  height: 16px;
-}
-.middle-star {
-  top: 0%;
-  right:7%;
   width: 40px;
   height: 40px;
+  bottom: -20px;
+  right: 10px;
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 50%;
+    right: 28%;
+    width: 64px;
+    height: 64px;
+  }
+}
+.small-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+    right: 12%;
+    top: 27%;
+    width: 16px;
+    height: 16px;
+  }
+}
+.middle-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+    top: 0%;
+    right: 7%;
+    width: 40px;
+    height: 40px;
+  }
 }

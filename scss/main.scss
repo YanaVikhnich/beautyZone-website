@@ -1,11 +1,13 @@
 
 
-@import './base';
+
 
 
 @import './utils/variables';
+@import './base';
 @import './utils/text';
 @import './utils/fonts';
+@import './utils/utils';
 
 
 @import './components/title';
@@ -15,6 +17,9 @@
 @import './components/form';
 @import './components/star';
 @import './components/modal';
+@import './components/pagination';
+@import './components/carousel';
+@import './components/burger-menu';
 
 
 @import './layouts/header';
