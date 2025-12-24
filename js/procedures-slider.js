@@ -12,7 +12,7 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween:10,
+      spaceBetween:30,
     },
     769: {
       slidesPerView: 2,
@@ -34,8 +34,8 @@ const swiper = new Swiper(".swiper", {
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: ".carousel-button.next",
-    prevEl: ".carousel-button.prev",
-  },
+  // navigation: {
+  //   nextEl: ".carousel-button.next",
+  //   prevEl: ".carousel-button.prev",
+  // },
 });
